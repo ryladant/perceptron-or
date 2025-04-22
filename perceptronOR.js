@@ -2,10 +2,15 @@ inputs = [[0,0], [0,1], [1,0], [1,1]]
 outputs = [0,1,1,1]
 learning_rate = 0.1
 epochs = 10000
-s = Math.random() > 0.5 ? -1 : 1 // aleatoriedade do sinal
-w1 = Math.random().toFixed(2) * s
-w2 = Math.random().toFixed(2) * s
-bias = Math.random().toFixed(2) * s
+
+
+s1 = Math.random() > 0.5 ? -1 : 1 // aleatoriedade do sinal
+s2 = Math.random() > 0.5 ? -1 : 1
+s3 = Math.random() > 0.5 ? -1 : 1
+
+w1 = Math.random().toFixed(2) * s1
+w2 = Math.random().toFixed(2) * s2
+bias = Math.random().toFixed(2) * s3
 
 for(let i=0; i < epochs; i++){
 	for(let j=0; j < inputs.length; j++){
